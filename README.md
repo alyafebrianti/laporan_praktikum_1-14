@@ -53,7 +53,7 @@
 # Hasil Praktikum 5
 ## Tampilan Pencarian data
 
-<img width="957" height="851" alt="image" src="https://github.com/user-attachments/assets/e2ecb0dd-3672-4bdf-9952-d2ea1c5561ba" />
+<img width="964" height="1007" alt="image" src="https://github.com/user-attachments/assets/1a152fcc-b748-4165-b105-dd034854b3d9" />
 
 
 # Penjelasan Praktikum 1-5
