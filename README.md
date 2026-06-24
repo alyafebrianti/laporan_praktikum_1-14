@@ -1,4 +1,4 @@
-# laporan_praktikum_1-4
+# laporan_praktikum_1-14
 
 # Identitas Mahasiswa
 ## Nama : Alya Febrianti
@@ -559,9 +559,67 @@ Update link pager agar query pencarian tetap terbawa saat pindah halaman:
 - [Dokumentasi CodeIgniter 4](https://codeigniter.com/user_guide/)
 - Modul Praktikum Pemrograman Web 2 — Agung Nugroho, Universitas Pelita Bangsa
 
+## 🚀 Bagian 1: Fondasi Backend & Pengembangan Framework (CodeIgniter 4)
 
+*   **Praktikum 1: Pengenalan PHP Framework (CodeIgniter 4) & Konsep MVC**
+    *   Melakukan konfigurasi *environment* pengembangan dengan mengaktifkan ekstensi krusial pada `php.ini` di XAMPP, seperti `php-intl`, `php-json`, dan `php-mysqlnd`[span_0](start_span)[span_0](end_span).
+    *   Mengaktifkan mode *debugging* dengan mengubah nilai `CI_ENVIRONMENT` menjadi `development` pada file `.env` untuk mempermudah pelacakan *error*[span_1](start_span)[span_1](end_span).
+    *   Memahami struktur direktori CodeIgniter 4 dan mengimplementasikan arsitektur MVC (Model-View-Controller) dengan mengatur *Routing* dasar dan menggunakan Spark CLI (`php spark routes`)[span_2](start_span)[span_2](end_span).
+    *   Membuat sistem *templating* dengan memecah komponen antarmuka menjadi *header*, *content*, dan *footer*[span_3](start_span)[span_3](end_span).
 
+*   **Praktikum 2: Framework Lanjutan (CRUD)**
+    *   Merancang database `lab_ci4` dan membuat tabel `artikel` yang berisi *field* `id`, `judul`, `isi`, `gambar`, `status`, dan `slug`[span_4](start_span)[span_4](end_span).
+    *   Menghubungkan database menggunakan file `.env` dan membuat `ArtikelModel` dengan mendefinisikan properti `$allowedFields`[span_5](start_span)[span_5](end_span).
+    *   Membangun fungsi CRUD (Create, Read, Update, Delete) di dalam *Controller* `Artikel.php`, lengkap dengan validasi form menggunakan `\Config\Services::validation()` untuk memastikan *field* judul wajib diisi (*required*)[span_6](start_span)[span_6](end_span).
 
+*   **Praktikum 3: View Layout dan View Cell**
+    *   Membersihkan kode antarmuka menggunakan *View Layout* dengan fungsi `$this->extend()` dan `$this->section()` yang merujuk pada template utama `layout/main.php`[span_7](start_span)[span_7](end_span).
+    *   Mengimplementasikan *View Cell* (`App\Cells\ArtikelTerkini`) untuk merender komponen UI secara dinamis dan terisolasi[span_8](start_span)[span_8](end_span).
+    *   Komponen ini menarik data artikel terbaru dari database menggunakan klausa `orderBy('created_at', 'DESC')` dan menampilkannya sebagai *widget sidebar*[span_9](start_span)[span_9](end_span).
+
+## ⚡ Bagian 2: Interaktivitas Data (AJAX)
+### Praktikum 8: Dasar AJAX
+
+Mengadopsi library jQuery (jquery-3.6.0.min.js) untuk melakukan HTTP request asinkron sehingga pembaruan data terjadi di latar belakang tanpa memuat ulang ( reload) halaman webspan_13span_13.
+Membuat AjaxController.php yang mengembalikan respon data dari Model dalam format JSON menggunakan $this->response->setJSON()span_14span_14.
+Menambahkan fungsi JavaScript khusus untuk memunculkan pesan indikator "Loading data..." saat proses pengambilan fetch data sedang berlangsungspan_15span_15.
+
+### Praktikum 9: AJAX Pagination dan Search
+
+Memperbarui method backend untuk menerima parameter pencarian (?q=) dan kategori (?kategori_id=) yang dieksekusi menggunakan Query Builder like dan wherespan_16span_16.
+Mengimplementasikan fungsi $builder->paginate() untuk memecah data per halamanspan_17span_17.
+Di sisi frontend, memanfaatkan $.ajax untuk menangkap objek JSON yang berisi data.artikel dan data.pager, lalu melakukan manipulasi Document Object Model (DOM) secara dinamis untuk merender isi tabel dan tombol navigasi paginationspan_18span_18.
+🌐 Bagian 3: Web Services & Frontend Modern (VueJS)
+
+### Praktikum 10: Implementasi RESTful API
+
+Mentransformasi fungsi CodeIgniter menjadi RESTful API menggunakan class ResourceController dan ResponseTraitspan_19span_19.
+Membangun endpoint khusus (/post) yang menyediakan fungsi index (GET), show (GET detail), create (POST), update (PUT), dan delete (DELETE)span_20span_20.
+Setiap proses modifikasi database dikonfigurasi untuk mengembalikan respon JSON standar dengan HTTP Status Codes (misal: 200 OK, 201 Created) dan telah diuji secara menyeluruh menggunakan metode x-www-form-urlencoded pada aplikasi Postmanspan_21span_21.
+
+### Praktikum 11: Pengenalan VueJS dan API Integration
+
+Mengembangkan Frontend menggunakan Framework VueJS 3 dan library Axios (keduanya dimuat via CDN) untuk mengonsumsi REST API backendspan_22span_22.
+Menerapkan Data Binding reaktif dari VueJS; menggunakan direktif v-for untuk me-looping data JSON ke dalam tabel, dan v-model untuk sinkronisasi input pada form modal Tambah/Ubah Dataspan_23span_23.
+Mengontrol state antarmuka UI dengan @click dan v-if untuk membuka atau menyembunyikan modal popup tanpa memerlukan manipulasi DOM manualspan_24span_24.
+
+### Praktikum 12: VueJS Komponen dan Routing (Single Page Application)
+
+Meningkatkan struktur Frontend menjadi Single Page Application (SPA) sejati dengan mengintegrasikan library Vue Router (vue-router.global.js)span_25span_25.
+Memecah logika JavaScript ke dalam file komponen yang terisolasi secara modular, yakni Home.js dan Artikel.jsspan_26span_26.
+Melakukan pemetaan rute (createRouter dan createWebHashHistory) serta memodifikasi struktur HTML utama dengan tag <router-link> dan <router-view> untuk perpindahan antar halaman yang kilat tanpa hard-reload pada browserspan_27span_27.
+
+### Praktikum 13: VueJS Autentikasi dan Navigation Guards
+
+Membangun mekanisme Client-Side Security dengan menyiapkan API Endpoint /api/login di backend CI4 yang akan merespon dengan mengembalikan kode Token berbasis base64_encode apabila kredensial user validspan_28span_28.
+Merancang komponen Login.js di Frontend yang menangkap token tersebut dan menyimpannya secara aman di localStorage (browser) dengan flag isLoggedInspan_29span_29.
+Mengamankan komponen Vue menggunakan fitur Navigation Guards (router.beforeEach). Rute yang dilindungi tanda meta: { requiresAuth: true } akan secara otomatis menolak akses dan melempar user kembali ke halaman login jika tidak terautentikasispan_30span_30.
+
+### Praktikum 14: Keamanan API, Autentikasi Token, dan Axios Interceptors
+
+Menyempurnakan proteksi secara End-to-End dengan metode Server-Side Security berbasis Tokenspan_31span_31.
+Pada backend CodeIgniter, saya membuat ApiAuthFilter (di dalam app/Filters/) yang bertugas mengekstrak dan memvalidasi Authorization: Bearer <token> dari HTTP Header. Filter ini diterapkan ke rute POST, PUT, dan DELETE agar database terlindungi dari tembakan API ilegal (misalnya dari Postman), dan akan merespon dengan error 401 Unauthorized jika token kosong atau salahspan_32span_32.
+Pada Frontend VueJS, saya mengonfigurasi fitur tingkat lanjut Axios Interceptors (axios.interceptors.request.use). Fitur ini secara otomatis menyuntikkan token dari localStorage ke dalam setiap Header HTTP request yang keluar, sehingga proses interaksi data antar platform web berjalan aman dan tanpa hambatan di latar belakangspan_33span_33.
 
 
 
