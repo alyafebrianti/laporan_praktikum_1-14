@@ -4,10 +4,10 @@
 # Nim : 312410692
 
 ## Halaman Login
-<img width="2861" height="1700" alt="image" src="https://github.com/user-attachments/assets/cf703271-207a-4edb-9f88-3d49fffc244e" />
+<img width="1891" height="1013" alt="Cuplikan layar 2026-04-05 210334" src="https://github.com/user-attachments/assets/05924438-992c-4925-b501-8559186e3ddc" />
 
 ## Halaman Admin
-<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/ffb5c001-9aa2-4d99-a905-dd0ac3d893cc" />
+<img width="1919" height="977" alt="Cuplikan layar 2026-04-01 173512" src="https://github.com/user-attachments/assets/d612c926-d7d4-4b81-9fd0-38acf6fa5efe" />
 
 ## Tampilan Kelola Artikel ada fitur hapus dan ubah
 <img width="2861" height="1093" alt="image" src="https://github.com/user-attachments/assets/c014aa57-1bc4-49dd-bb8f-97ccd5ecb5ba" />
