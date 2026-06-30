@@ -12,20 +12,20 @@
 ## Tampilan Kelola Artikel ada fitur hapus dan ubah
 <img width="2861" height="1093" alt="image" src="https://github.com/user-attachments/assets/c014aa57-1bc4-49dd-bb8f-97ccd5ecb5ba" />
 <img width="997" height="1098" alt="image" src="https://github.com/user-attachments/assets/38051484-3d78-40de-bac4-c0ba118802e0" />
-<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/784996ac-6af2-472e-a270-9fc27c230079" />
+<img width="1915" height="1009" alt="Cuplikan layar 2026-04-05 211200" src="https://github.com/user-attachments/assets/ba8f69f1-c3fd-48ff-bac2-e8675c9462f2" />
 
 ## Tambah Artikel
-<img width="1143" height="1222" alt="image" src="https://github.com/user-attachments/assets/a1cd97f8-2add-450e-a712-b6c1d38a0572" />
+<img width="1919" height="1008" alt="Cuplikan layar 2026-04-05 211329" src="https://github.com/user-attachments/assets/202f8c10-4ff6-453c-ae8e-4d1696d242f9" />
 <img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/97402e14-cb1a-40cf-9221-a12a878a5831" />
 
 ## Tampilan Layout Sederhana
-<img width="2860" height="1524" alt="image" src="https://github.com/user-attachments/assets/0259e42b-b7c0-48da-94cc-7f6d5da21610" />
+<img width="1909" height="1008" alt="Cuplikan layar 2026-04-05 211504" src="https://github.com/user-attachments/assets/9c43885c-eaed-47c3-961e-2364e0602e5d" />
 
 ## Tampilan Artikel
-<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/07948fc9-7bca-4ad6-933c-501a7d4b9809" />
+<img width="1911" height="1004" alt="Cuplikan layar 2026-04-05 212152" src="https://github.com/user-attachments/assets/504af4c6-4374-4914-8c56-359c6f63cb7d" />
 
 ## Tampilan About
-<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/1d1a7ae5-0ce2-43b1-89bd-9a534236ecf8" />
+<img width="1917" height="1010" alt="Cuplikan layar 2026-04-05 211917" src="https://github.com/user-attachments/assets/beca69d1-14ba-4004-8750-8f5844ca65b3" />
 
 ## Tampilan Kontak
 <img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/deb4163a-1a9d-4be0-a0f7-e890890b8339" />
